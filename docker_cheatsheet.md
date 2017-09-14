@@ -6,12 +6,16 @@ Containers - Running containers are called containers
 
 #callows the container to be renamed
 $ docker rename 
+
 #creates a container but does not start it
 $ docker create 
+
 #creates and starts a container in one operation
 $ docker run 
+
 #deletes a container   
 $ docker rm  
+
 #updates a containers resource limits   
 $ docker update 
 

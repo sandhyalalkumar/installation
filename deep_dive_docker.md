@@ -28,14 +28,18 @@ libcontainer is the default driver for Docker system. Previously they used LXC.
 
 The docker engine is also called **Docker Daemon**. It is the docker engine we install each host machine, which provide us to access all docker services. It is a standardized shipping yard. Standardized run time environment. And application portablity insanly simple.
 
-## Docker Inmages
+## Docker Images
 **docker build | docker images | docker inspect**
 **Union mount, layring, DockerFile**
-
-Docker images are we launch the docker container from. Docker Images are **build-time** instance and Docker container are **run-time** instance of docker images.
 
 ## Docker Container
 **docker start | stop | restart**
 
+Docker images are we launch the docker container from. Docker Images are **build-time** instance and Docker container are **run-time** instance of docker images. For example `docker run -it fedora /bin/bash` this command uses fedora image to run fedora container which is a light weight Operating System. Images are bit like template in virtual machine. If the image is not present locally it will first pull image from dockerhub i.e. from public image registry, and the run the docker container. We can say that running instance of docker image is docker container.
+
 ## Registries, Volumes, Networking
+The images are pulled from repo which are inside Resistry. Registry are docker hub and which contains bunch of repos. The hub contains some official repos i.e. trusted repo. User can also create their repo which is called unofficial repo, mostly these are created by docker community.
+
+## Runing the Ubuntu container for short lived (non-interactive shell)
+Let's see the command `$ docker run ubuntu  /bin/bash -c "echo 'cool content' > /temp/cool-file"`. The command run Ubuntu shell in non-interactive mode. It starts the container run the shell and command in the shell once works completed it exists the shell and container.
 

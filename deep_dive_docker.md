@@ -26,11 +26,13 @@ libcontainer is the default driver for Docker system. Previously they used LXC.
 **Execution Drives: libcontainers VS LXC**
 **AUFS, OverlayFS, Device Mapper**
 
-The docker engine is also called **Docker Daemon**. It is the docker engine we install each host machine, which provide us to access all docker services.
+The docker engine is also called **Docker Daemon**. It is the docker engine we install each host machine, which provide us to access all docker services. It is a standardized shipping yard. Standardized run time environment. And application portablity insanly simple.
 
 ## Docker Inmages
 **docker build | docker images | docker inspect**
 **Union mount, layring, DockerFile**
+
+Docker images are we launch the docker container from. Docker Images are **build-time** instance and Docker container are **run-time** instance of docker images.
 
 ## Docker Container
 **docker start | stop | restart**

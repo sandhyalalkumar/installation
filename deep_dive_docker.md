@@ -49,11 +49,15 @@ Docker commit takes the changes we made and create new image.
 
 ## Shiping a container from Ubuntu another Docker environment
 **Saving a container image to a tar file**
+
 `$ docker save -o /tmp/fridge.tar fridge`
+
 `$ docker save -o <output archive>.tar <image_name>` 
 
 **Then copy this tar file to anothor OS/Location/ any machine which running docker engine**
 **Loading to another machine**
+
 `$ docker load -i /tmp/fridge.tar`
+
 `$ docker load -i <to be imported image>.tar`
 

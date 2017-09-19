@@ -2,9 +2,13 @@
 Ansible is configuration management, software provisining tool. 
 
 ## Ansible Functions 
+
 **Change Management**
+
 **Provisioning**
+
 **Automation**
+
 **Orchestration**
 
 **Change Management**-When the system is deviated from the state is called change. For production system changing the system state is crucial. Is should change unless there is a requirements. 

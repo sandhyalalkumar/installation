@@ -35,7 +35,9 @@ The docker engine is also called **Docker Daemon**. It is the docker engine we i
 ## Docker Container
 **docker start | stop | restart**
 
-Docker images are we launch the docker container from. Docker Images are **build-time** instance and Docker container are **run-time** instance of docker images. For example `docker run -it fedora /bin/bash` this command uses fedora image to run fedora container which is a light weight Operating System. Images are bit like template in virtual machine. If the image is not present locally it will first pull image from dockerhub i.e. from public image registry, and the run the docker container. We can say that running instance of docker image is docker container.
+When we run an image using docker run command `$ docker run ...` a docker engine reads an image and it's metadata and build the container by stacking the different image layers. Each image contains its own **thin writable layer** on top. It all goes there on top layer, initially this layer is empty. Then this top level layer starts growing once we start activity in the container.
+
+Docker images are we launch the docker container from. Docker Images are **build-time** construct and Docker container are **run-time** construct of docker images. For example `docker run -it fedora /bin/bash` this command uses fedora image to run fedora container which is a light weight Operating System. Images are bit like template in virtual machine. If the image is not present locally it will first pull image from dockerhub i.e. from public image registry, and the run the docker container. We can say that running instance of docker image is docker container.
 
 ## Registries, Volumes, Networking
 The images are pulled from repos which are inside Resistry. Registry are docker hub and which contains bunch of repos. The hub contains some official repos i.e. trusted repos. User can also create their repo which is called unofficial repo, mostly these are created by docker community users.
@@ -55,6 +57,7 @@ Docker commit takes the changes we made and create new image.
 `$ docker save -o <output archive>.tar <image_name>` 
 
 **Then copy this tar file to anothor OS/Location/ any machine which running docker engine**
+
 **Loading to another machine**
 
 `$ docker load -i /tmp/fridge.tar`

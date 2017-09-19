@@ -26,7 +26,7 @@ $ docker version
 	-sever details
 
 $ docker info
-	- Says how many containers got.
+	- Says how many containers got
 	- Running
 	- Paused 
 	- Stopped 
@@ -57,5 +57,15 @@ $ docker run -d --name -p 80:8080 <some_name>
 ### Running an Ubuntu container and its terninal instance in interactive mode and 
 ### open terminal 
 $ docker run -it --name temp ubuntu:latest /bin/bash
+#### exit from ubuntu container
+ `Ctrl P + Q` 
+
+### Stop all containers
+$ docker stop $(docker ps -aq) _q return id_
+
+### Remove all containers
+$ docker rm $(docker ps -aq) _q return id_
+
+
 
 

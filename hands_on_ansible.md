@@ -37,13 +37,11 @@ Asible-Galaxy - Community bases catalogue.
 
 **Inventory-** A text file where we can define host level variables. 
 
-**Playbook-** Playbooks are text/yaml file where define the individual task, like  individual play. We buid are automation or orchestration using play-books files and playbook command.
+**Playbook-** Playbooks are text/yaml file where define the individual task, like  individual play. We buid are automation or orchestration using play-books files and playbook command. A set of plays built in specific orders sequence to produce an expected outcome and outcomes across many set of different hosts.
 
 **Modules-** Modules have modules which needs to be performed on different hosts. A programmed unit of work to be done. Suppose we want to install some software on Red Hat, Cent OS then use `yum` module. If we want to install some software on debian then use `apt` module.
 
 **Play-** A single or set of tasks using modules, executed on a defined set of hosts.  
-
-**Playbook-** A set of plays built in specific orders sequence to produce an expected outcome and outcomes across many set of different hosts.
 
 **Ansible config-** This contains global set of variables and allows you to change it's defaults. 
 
@@ -51,7 +49,9 @@ Asible-Galaxy - Community bases catalogue.
 
 ## Variables in ansible
 **1. Host Variables** Use variables defined in inventory per host or group.
+
 **2. Facts Variables** Use data from the remote managed host like IP, Memory and even if you want CPU speed.
+
 **3. Dynamic Variables** Use data gathered by tasks or created at run time.
 
 

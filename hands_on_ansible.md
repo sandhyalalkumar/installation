@@ -80,6 +80,33 @@ Asible-Galaxy - Community bases catalogue.
 
 `$ ansible-doc -s <name>`
 
+## Module Categories
+
+1. Manage Servers
+
+2. Deploy Configuration
+
+3. Configure network equipment
+
+4. Maintain virtual environment
+
+5. Manage databases and tables
+
+6. Deploy load-balancer configurations
+
+## Copy Module
+
+Copy file from local to remote
+
+Has backup capability
+
+Can do validatin remotely
+
+
+
+
+
+
 
 
 

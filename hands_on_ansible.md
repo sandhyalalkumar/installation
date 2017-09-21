@@ -54,5 +54,33 @@ Asible-Galaxy - Community bases catalogue.
 
 **3. Dynamic Variables** Use data gathered by tasks or created at run time.
 
+## Configuration Setting Order of Operations
+
+1. $ANSIBLE_CONFIG
+
+2. ./ansible.cfg
+
+3. ~/.ansible.cfg
+
+4. /etc/ansible/ansible.cfg - Called global config
+
+## There 3 kinds of modeules
+
+1. Core
+
+2. Extra
+
+3. Depricated
+
+## Module Docs
+
+`$ ansible-docs -l`
+
+`$ ansible-doc <name>`
+
+`$ ansible-doc -s <name>`
+
+
+
 
 
